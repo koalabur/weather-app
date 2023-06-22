@@ -16,27 +16,11 @@ export default defineNuxtConfig({
         },
         {
           property: "og:description",
-          content: "Vue/ Nuxt.js Portfolio created by Cameron",
+          content: "Weather App created by Cameron",
         },
         { property: "og:type", content: "website" },
         { property: "og:url", content: "https://weather.cameronrdesign.com" },
         { property: "og:locale", content: "en_US" },
-      ],
-      link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        {
-          rel: "preconnect",
-          href: "https://fonts.googleapis.com",
-        },
-        {
-          rel: "preconnect",
-          href: "https://fonts.gstatic.com",
-          crossorigin: "",
-        },
-        {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;600&display=swap",
-        },
       ],
     },
   },
