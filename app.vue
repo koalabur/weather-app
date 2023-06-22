@@ -4,8 +4,7 @@
       class="text-off-white w-screen h-screen flex text-center justify-center items-center bg-black text-4xl"
       v-if="!payload"
     >
-      To show you the weather, the app will need access to your location. <br />Please
-      refresh the browser and allow access to your location.
+      To show you the weather, the app will need access to your location. <br />If you already have given access, please hold...
     </p>
     <Weather v-else :data="payload" />
   </main>

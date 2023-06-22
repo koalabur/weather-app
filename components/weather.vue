@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col sm:flex-row">
     <div
-      class="flex flex-col items-center bg-transparent-blue w-full gap-[2rem] pt-5 pb-20 pl-5 pr-5 sm:pb-0 sm:gap-[3rem] sm:basis-1/4 sm:p-5 sm:h-screen"
+      class="flex flex-col justify-center items-center bg-transparent-blue w-full gap-[2rem] pt-5 pb-20 pl-5 pr-5 sm:pb-0 sm:gap-[3rem] sm:basis-1/4 sm:p-5 sm:h-screen"
     >
       <!-- item  -->
       <div>
@@ -95,7 +95,7 @@
       </div>
     </div>
     <div
-      class="order-first flex flex-col justify-center items-center pl-5 pr-5 pb-10 sm:p-0 sm:order-last sm:basis-3/4"
+      class="h-[calc(100vh-30px)] order-first flex flex-col justify-center items-center pl-5 pr-5 pb-10 sm:h-auto sm:p-0 sm:order-last sm:basis-3/4"
     >
       <nuxt-img
         class="w-[15rem]"
