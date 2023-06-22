@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsla(214, 100%, 3%, 1);
+  background-image: radial-gradient(
+      at 73% 22%,
+      hsla(224, 56%, 35%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 18% 68%, hsla(288, 89%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 26% 16%, hsla(214, 54%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 62% 54%, hsla(183, 80%, 67%, 1) 0px, transparent 50%);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
