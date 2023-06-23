@@ -1,7 +1,6 @@
 <template>
   <main>
     <GeoForm v-if="!payload" @send-geo="(lat, long) => getWeather(lat, long)" />
-
     <Weather v-else :data="payload" />
   </main>
 </template>
