@@ -33,6 +33,7 @@ export default defineNuxtConfig({
     // Public keys that are exposed to the client
     public: {
       OPENWEATHER_API: process.env.OPENWEATHER_API as string,
+      GEOCODE_API: process.env.GEOCODE_API as string,
     },
   },
   postcss: {
