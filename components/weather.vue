@@ -8,7 +8,7 @@
         <h2
           class="font-body text-center text-off-white tracking-widest mb-1 text-3xl"
         >
-          DESCRIPTION
+          FORECAST
         </h2>
         <p
           class="font-body text-off-white text-center font-extrabold uppercase tracking-widest text-2xl"
