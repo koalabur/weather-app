@@ -148,7 +148,7 @@ const weatherIcon = computed(() => {
     weatherDescription.value === "scattered clouds" ||
     weatherDescription.value === "broken clouds"
   ) {
-    return "scattered_clouds";
+    return "broken_clouds";
   } else if (
     weatherDescription.value === "shower rain" ||
     weatherDescription.value === "rain"
