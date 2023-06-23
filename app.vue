@@ -1,11 +1,6 @@
 <template>
   <main>
-    <p
-      class="text-off-white w-screen h-screen flex text-center justify-center items-center bg-black text-4xl"
-      v-if="!payload"
-    >
-      To show you the weather, the app will need access to your location. <br />If you already have given access, please hold...
-    </p>
+    <GeoForm v-if="!payload" @send-geo="(lat, long) => getWeather(lat, long)" />
     <Weather v-else :data="payload" />
   </main>
 </template>
@@ -27,6 +22,7 @@ const longitude = computed<number | string>(() => {
 
 // Get Weather
 const payload = ref<WeatherData | null>(null);
+
 async function getWeather(lati: string, longi: string) {
   const { data } = await useFetch<WeatherData>(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${longi}&units=imperial&appid=${config.public.OPENWEATHER_API}`
@@ -35,6 +31,7 @@ async function getWeather(lati: string, longi: string) {
     payload.value = data.value;
   }
 }
+
 /// Watch for changes in latitude
 watch(latitude, () => {
   getWeather(latitude.value.toString(), longitude.value.toString());
